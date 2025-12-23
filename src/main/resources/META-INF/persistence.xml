@@ -6,12 +6,12 @@
 			 version="3.0">
 
 	<persistence-unit name="CadastroPU" transaction-type="JTA">
-		<jta-data-source>java:/PostgresDS</jta-data-source>
+		<jta-data-source>java:jboss/datasources/ClienteDS</jta-data-source>
 
 		<properties>
 			<!-- Só pra debug agora -->
 			<property name="jakarta.persistence.schema-generation.database.action"
-					  value="none"/>
+					  value="create"/>
 		</properties>
 	</persistence-unit>
 

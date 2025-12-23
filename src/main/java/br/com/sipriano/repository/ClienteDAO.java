@@ -1,11 +1,13 @@
 package br.com.sipriano.repository;
 
 import br.com.sipriano.domain.Cliente;
+import jakarta.ejb.Stateless;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 
 import java.util.List;
 
+@Stateless
 public class ClienteDAO {
 
     @PersistenceContext
